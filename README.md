@@ -1,6 +1,6 @@
 # Circles in the Cosmo
  
-https://drive.google.com/file/d/1wDWc4wrmYio57C0k7sUnqQLFV1Z2sMlz/view?usp=sharing (i apologize I couldn't get the audio to play in the recording)
+https://drive.google.com/file/d/1wDWc4wrmYio57C0k7sUnqQLFV1Z2sMlz/view?usp=sharing (i apologize I couldn't get the audio to play in the recording but the audio certainly works in the app)
 
 For the cyclic animation assignment, I wanted to create a space-themed artwork. For the cyclic animation assignment, I wanted to create a space-themed artwork as I am constantly in awe of how outer space has perfectly ordered movement every second of the day. These movements are harmonious and never contradict one another.  This artwork implements circles of 2d and 3d to mimic a central plant with sub-planets revolving around it. This piece is user interactive as through the GUI one can play around with different textures, radii, positions, and sizes. 
 
