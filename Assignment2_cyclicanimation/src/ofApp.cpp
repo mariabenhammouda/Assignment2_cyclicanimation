@@ -175,10 +175,13 @@ void ofApp::draw(){
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
 
-  //hide gui at press of key g
-  if (key == 'g') {
+  //hide gui at press of key h
+  if (key == 'h') {
     guidraw = false;
   }
+    if (key == 'g') {
+      guidraw = true;
+    }
 }
 
 //--------------------------------------------------------------
