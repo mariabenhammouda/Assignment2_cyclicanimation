@@ -57,6 +57,7 @@ void ofApp::update(){
     float time = ofGetElapsedTimef()/10; //Get time in seconds
     float value = sin( time * M_TWO_PI );
     //Map value from [-1,1] to [0,255]
+    //set changing background color based on the time elapsed
     float r = ofMap( value, -1, 1, 0, 75 );
     float g = ofMap( value, -1, 1, 0, 90 );
     float b = ofMap( value, -1, 1, 0, 200 );
@@ -127,8 +128,9 @@ void ofApp::draw(){
     //create color palette through a vector of type color
     vector<ofColor> color_list = { ofColor(111, 29, 27), ofColor(187, 148, 87), ofColor(67, 40, 24),ofColor(153, 88, 42),ofColor(255, 230, 167) };
     //sound reactive drawing
+    ofPushStyle();
     for(int i=0; i<band;i++){
-        ofPushStyle();
+        
         ofSetColor(color_list[i]);
         //assign the radius of the circle based on the volume of the audio
         ofDrawCircle(ofRandom(ofGetWidth()), ofRandom(ofGetHeight()), fft[i]*100);
@@ -152,9 +154,9 @@ void ofApp::draw(){
   
 
 
-  
+    ofPushStyle();
   for (int i = 0; i < circle.size(); i++) {
-      ofPushStyle();
+     
       //draw gold ring for the central planet
       ofSetColor(248, 222, 126);
       circle[i].draw();
