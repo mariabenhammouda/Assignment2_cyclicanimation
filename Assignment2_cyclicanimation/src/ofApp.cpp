@@ -8,7 +8,7 @@ void ofApp::setup(){
     //keep looping the audio while app is running
     sound.setLoop(true);
     recenttime=ofGetSystemTimeMillis();
-   // ofBackground(0);
+  //  ofBackground(0);
   ofSetFrameRate(40);
   ofSetBackgroundAuto(false);
   ofSetCircleResolution(60);
@@ -54,13 +54,13 @@ void ofApp::update(){
             fft[i]=soundSpectrum[i];
         }
     }
-    float time = ofGetElapsedTimef()/10; //Get time in seconds
+   float time = ofGetElapsedTimef()/10; //Get time in seconds
     float value = sin( time * M_TWO_PI );
     //Map value from [-1,1] to [0,255]
     //set changing background color based on the time elapsed
-    float r = ofMap( value, -1, 1, 0, 75 );
-    float g = ofMap( value, -1, 1, 0, 90 );
-    float b = ofMap( value, -1, 1, 0, 200 );
+    float r = ofMap( value, -1, 1, 0, 3 );
+    float g = ofMap( value, -1, 1, 0, 4 );
+    float b = ofMap( value, -1, 1, 0, 94 );
     ofBackground( r, g, b );
   //  ofBackground(col);
    /* if(ofGetSystemTimeMillis()-recenttime >10){
@@ -75,6 +75,7 @@ void ofApp::update(){
         recenttime=ofGetSystemTimeMillis();
         
     }*/
+    
     
     //if the number of elements in circle array are less than the max circles then create circle, if not then erease the first circle created
   while (circle.size() != circles_num){
