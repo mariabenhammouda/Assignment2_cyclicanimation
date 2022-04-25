@@ -228,4 +228,7 @@ void ofApp::gotMessage(ofMessage msg){
 void ofApp::dragEvent(ofDragInfo dragInfo){
 
 }
+void ofApp::audioReceived( float *input, int bufferSize, int nChannels ){
+ //... use input array here
+}
 
